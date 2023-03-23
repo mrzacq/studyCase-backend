@@ -4,9 +4,10 @@ const path = require("path");
 dotenv.config();
 module.exports = {
   rootPath: path.resolve(__dirname, ".."),
-  secretkey: process.env.SECRET_KEY,
+  secretkey: "secret",
   serviceName: process.env.SERVICE_NAME,
-  dbUrl: process.env.DB_URL,
+  dbUrl:
+    "mongodb+srv://latihan:latihan@cluster0.1tk5qit.mongodb.net/?retryWrites=true&w=majority",
   // dbHost: process.env.DB_HOST,
   // dbPort: process.env.DB_PORT,
   // dbUser: process.env.DB_USER,
